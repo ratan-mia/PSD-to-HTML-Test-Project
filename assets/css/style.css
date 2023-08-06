@@ -70,6 +70,15 @@ header {
     text-align: center;
 }
 
+.navbar {
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: #fff;
+    /* Change the color to your preference */
+}
+
 .banner-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 100px;
