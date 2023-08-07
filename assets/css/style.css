@@ -127,28 +127,28 @@ header {
 
 #header .banner-title {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 150px;
     color: #4d4d4d;
-    line-height: 1;
+    line-height: 0.8;
 }
 
 
 /* Define custom font sizes based on media queries */
 @media (max-width: 576px) {
-    .banner-title {
+    #header .banner-title {
         font-size: 30px;
     }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
-    .banner-title {
+    #header .banner-title {
         font-size: 50px;
     }
 }
 
 @media (min-width: 993px) {
-    .banner-title {
-        padding: 150px;
+    #header .banner-title {
+        font-size: 150px;
+        padding: 100px;
     }
 }
 
@@ -293,6 +293,7 @@ header {
 .tab-content-mountain1 {
     position: relative;
     width: 100%;
+    min-height: 600px;
     background-image: url('/assets/img/bg-mountain1.jpg');
     background-size: cover;
     background-position: top center;
@@ -303,17 +304,18 @@ header {
 
 }
 
-.tab-content-mountain1::before {
+/* .tab-content-mountain1::before {
     content: "";
     display: block;
     padding-top: 30%;
 
-}
+} */
 
 
 .tab-content-mountain2 {
     position: relative;
     width: 100%;
+    min-height: 600px;
     background-image: url('/assets/img/bg-mountain2.jpg');
     background-size: cover;
     background-position: top center;
@@ -324,20 +326,19 @@ header {
 
 }
 
-.tab-content-mountain2::before {
+/* .tab-content-mountain2::before {
     content: "";
     display: block;
     padding-top: 30%;
 
-}
+} */
 
 .schedulebox {
     position: absolute;
     width: 100%;
     max-width: 400px;
     height: auto;
-    left: 20%;
-    transform: translateX(-50%);
+    left: 16%;
     top: 15%;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 30px 25px;
@@ -361,14 +362,31 @@ header {
     color: #000;
 }
 
-@media screen and (min-width: 768px) {
-    .tab-content-mountain1 {
-        padding: 0;
-    }
 
+/* Responsive Styles */
+
+@media screen and (min-width: 768px) {
     .schedulebox {
-        left: 20%;
+        left: 16%;
         max-width: 400px;
-        transform: translateX(-50%);
+
+    }
+}
+
+@media (max-width: 768px) {
+    .schedulebox {
+        max-width: 90%;
+        left: 5%;
+        top: 10%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .schedulebox {
+        max-width: 100%;
+        left: 2%;
+        top: 5%;
+        padding: 20px;
     }
 }
