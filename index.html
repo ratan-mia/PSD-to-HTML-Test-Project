@@ -114,10 +114,17 @@
         // Add a class to the navbar when scrolling down
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const logoImage = document.querySelector('.navbar-brand img');
+
             if (window.scrollY > 10) {
-                navbar.classList.add('scrolled');
+                navbar.classList.add('sticky');
+                navLinks.forEach(link => link.classList.add('sticky-link'));
+                logoImage.src = '/assets/img/logo_sticky.png';
             } else {
-                navbar.classList.remove('scrolled');
+                navbar.classList.remove('sticky');
+                navLinks.forEach(link => link.classList.remove('sticky-link'));
+                logoImage.src = '/assets/img/logo.png';
             }
         });
         $('.owl-carousel').owlCarousel({

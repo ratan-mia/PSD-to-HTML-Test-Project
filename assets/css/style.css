@@ -74,23 +74,46 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     /* Adjust the alpha value for desired transparency */
     color: #fff;
-    /* padding: 100px 0; */
+    padding: 100px 0;
     /* Adjust as needed */
     text-align: center;
 }
 
-.logo {
-    width: 50px;
+.fixed-top {
+    height: 75px;
+}
+
+
+
+/* .stikcy .navbar-brand img {
+    width: 100px !important;
     height: auto;
 }
+
+.navbar .navbar-brand img {
+    width: 50px;
+    height: auto;
+} */
+
 
 .navbar {
     background-color: transparent;
 }
 
-.navbar.scrolled {
+.navbar.sticky {
     background-color: #fff;
 }
+
+.nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+
+.sticky-link {
+    color: #414f6b !important;
+}
+
 
 nav ul li a,
 .nav-link {
