@@ -79,6 +79,11 @@ header {
     text-align: center;
 }
 
+.logo {
+    width: 50px;
+    height: auto;
+}
+
 .navbar {
     background-color: transparent;
 }
@@ -136,12 +141,12 @@ nav ul li a,
     background-position: top center;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding: 100px 0 100px 0;
+    padding-top: 100px;
     text-align: center;
 }
 
 .history .text-container {
-    padding: 100px 0 300px 0;
+    padding: 100px 0 200px 0;
 }
 
 .history h3 {
@@ -170,9 +175,15 @@ nav ul li a,
 }
 
 
+.carousel-container {
+    background: rgb(57 70 92 / 50%);
+    padding: 10px;
+}
+
+
 .owl-dots {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .owl-dots button.owl-dot {
@@ -180,10 +191,10 @@ nav ul li a,
     height: 10px;
     border-radius: 50%;
     display: inline-block;
-    background: #ccc;
-    margin: 0 3px;
+    background: #646e81;
+    margin: 0 2px;
 }
 
 .owl-dots button.owl-dot.active {
-    background-color: #646e81;
+    background-color: #ccc;
 }
