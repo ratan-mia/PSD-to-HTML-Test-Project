@@ -198,9 +198,8 @@ header {
 
 .carousel-container {
     background: rgb(57 70 92 / 50%);
-    padding: 10px;
+    padding: 20px 10px;
 }
-
 
 .owl-dots {
     text-align: center;
@@ -223,7 +222,7 @@ header {
 /* === Climb Section Style === */
 
 .climb .text-container {
-    padding: 100px 0 200px 0;
+    padding: 50px 0;
 }
 
 .climb .text-container h3 {
