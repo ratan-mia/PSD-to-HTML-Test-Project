@@ -46,7 +46,6 @@ p {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 /* Add some styling to buttons */
@@ -77,6 +76,7 @@ header {
     padding: 100px 0;
     /* Adjust as needed */
     text-align: center;
+
 }
 
 .fixed-top {
@@ -96,27 +96,29 @@ header {
 } */
 
 
-.navbar {
+#header .navbar {
     background-color: transparent;
+    transition: padding 0.3s ease;
 }
 
-.navbar.sticky {
+#header .navbar.sticky {
     background-color: #fff;
+    padding: 10px 0;
 }
 
-.nav-link {
+#header .nav-link {
     color: #fff;
     transition: color 0.3s ease;
 }
 
 
-.sticky-link {
+#header .sticky-link {
     color: #414f6b !important;
 }
 
 
-nav ul li a,
-.nav-link {
+#header nav ul li a,
+#header .nav-link {
     font-family: 'Lato Black Italic', sans-serif;
     font-weight: 800;
     font-style: italic;
@@ -127,7 +129,7 @@ nav ul li a,
 
 /* === Banner Section Style === */
 
-.banner-title {
+#header .banner-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 150px;
     color: #4d4d4d;
@@ -220,4 +222,158 @@ nav ul li a,
 
 .owl-dots button.owl-dot.active {
     background-color: #ccc;
+}
+
+/* === Climb Section Style === */
+
+.climb .text-container {
+    padding: 100px 0 200px 0;
+}
+
+.climb .text-container h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 135px;
+    line-height: 1;
+    text-align: left;
+    color: #8597b0;
+}
+
+.climb .text-container h3 span {
+    font-size: 32px;
+    color: #414f6b;
+
+}
+
+.climb .text-container p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+
+}
+
+
+/* === Tab Content Section Style === */
+
+
+#mountain-tab .nav-pills-container {
+    background-color: #414f6b;
+    width: 100%;
+    /* padding: 10px 0; */
+
+}
+
+/* #mountain-tab .nav.nav-pills {
+    background-color: #414f6b;
+    width: 100%;
+    padding: 10px 0;
+} */
+
+#mountain-tab .nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #b0b4be;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+#mountain-tab .nav-link.active {
+    background-color: #b0b4be;
+    padding: 10px 20px;
+    color: #414f6b;
+    border-radius: 0;
+
+}
+
+#mountain-tab .nav-link:not(.active):hover {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+
+.tab-content-mountain1 {
+    position: relative;
+    width: 100%;
+    background-image: url('/assets/img/bg-mountain1.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.tab-content-mountain1::before {
+    content: "";
+    display: block;
+    padding-top: 30%;
+
+}
+
+
+.tab-content-mountain2 {
+    position: relative;
+    width: 100%;
+    background-image: url('/assets/img/bg-mountain1.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.tab-content-mountain2::before {
+    content: "";
+    display: block;
+    padding-top: 30%;
+
+}
+
+.schedulebox {
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    left: 20%;
+    transform: translateX(-50%);
+    top: 15%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px 25px;
+}
+
+.schedulebox h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.5;
+    text-align: left;
+    color: #414f6b;
+}
+
+.schedulebox p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+@media screen and (min-width: 768px) {
+    .tab-content-mountain1 {
+        padding: 0;
+    }
+
+    .schedulebox {
+        left: 20%;
+        max-width: 400px;
+        transform: translateX(-50%);
+    }
 }
