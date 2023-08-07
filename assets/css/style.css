@@ -133,12 +133,15 @@ nav ul li a,
 .history {
     background-image: url('/assets/img/history-bg.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Adjust the alpha value for desired transparency */
     color: #fff;
-    padding: 100px 0 200px 0;
+    padding: 100px 0 100px 0;
     text-align: center;
+}
+
+.history .text-container {
+    padding: 100px 0 300px 0;
 }
 
 .history h3 {
@@ -146,6 +149,7 @@ nav ul li a,
     font-weight: bold;
     font-size: 135px;
     line-height: 1;
+    text-align: left;
     color: #8597b0;
 }
 
@@ -160,6 +164,26 @@ nav ul li a,
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
+    text-align: left;
     color: #000;
 
+}
+
+
+.owl-dots {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.owl-dots button.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ccc;
+    margin: 0 3px;
+}
+
+.owl-dots button.owl-dot.active {
+    background-color: #646e81;
 }
