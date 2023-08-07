@@ -135,26 +135,27 @@ header {
 /* Define custom font sizes based on media queries */
 @media (max-width: 576px) {
     #header .banner-title {
-        font-size: 30px;
+        font-size: 50px;
+        padding: 50px 0 75px 0;
     }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
     #header .banner-title {
-        font-size: 50px;
+        font-size: 75px;
+        padding: 50px 0 75px 0;
     }
 }
 
 @media (min-width: 993px) {
     #header .banner-title {
         font-size: 150px;
-        padding: 100px;
+        padding: 150px 0 250px 0;
     }
 }
 
 
 /* === History Section Style === */
-
 
 .history {
     background-image: url('/assets/img/history-bg.jpg');
@@ -162,13 +163,29 @@ header {
     background-position: top center;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
 }
 
 .history .text-container {
-    padding: 100px 0 200px 0;
+    padding: 150px 0 300px 0;
 }
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 991px) {
+    .history .text-container {
+        padding: 100px 0 200px 0;
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 767px) {
+    .history .text-container {
+        padding: 50px 0 100px 0;
+    }
+}
+
+
 
 .history h3 {
     font-family: 'Oswald', sans-serif;
@@ -176,12 +193,12 @@ header {
     font-size: 135px;
     line-height: 1;
     text-align: left;
-    color: #8597b0;
+    color: #6e7e99;
 }
 
 .history h3 span {
     font-size: 32px;
-    color: #414f6b;
+    color: #6e7e99;
 
 }
 
@@ -231,12 +248,12 @@ header {
     font-size: 135px;
     line-height: 1;
     text-align: left;
-    color: #8597b0;
+    color: #b0b4be;
 }
 
 .climb .text-container h3 span {
     font-size: 32px;
-    color: #414f6b;
+    color: #b0b4be;
 
 }
 
@@ -273,6 +290,7 @@ header {
     color: #b0b4be;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 10px 20px;
     border-radius: 0;
 }
 
