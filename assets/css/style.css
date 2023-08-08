@@ -1,3 +1,17 @@
+/* Style Sections List:
+   1. Reset and Base Styles
+   2. Fonts
+   3. Header Styles
+   4. Navigation Styles
+   5. Banner Section Styles
+   6. History Section Styles
+   7. Carousel Styles
+   8. Climb Section Styles
+   9. Tab Content Styles
+   10. Schedule Box Styles
+   11. Footer Styles
+*/
+
 /* Reset some default browser styles */
 body,
 h1,
@@ -9,7 +23,6 @@ li {
     margin: 0;
     padding: 0;
 }
-
 
 /* Set a base font and background color */
 body {
@@ -29,8 +42,6 @@ p {
     margin-bottom: 20px;
 }
 
-
-
 /* Add some styling to buttons */
 .button {
     display: inline-block;
@@ -48,9 +59,8 @@ p {
     }
 }
 
-
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&family=Oswald:wght@700&display=swap');
-
 
 @font-face {
     font-family: 'Lato Black Italic';
@@ -58,40 +68,24 @@ p {
         url('assets/fonts/lato-blackitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
-
+/* Header */
 header {
     background-image: url('/assets/img/header-banner.jpg');
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Adjust the alpha value for desired transparency */
     color: #fff;
     padding: 100px 0;
-    /* Adjust as needed */
     text-align: center;
-
 }
 
 .fixed-top {
     height: 75px;
 }
 
-
-
-/* .stikcy .navbar-brand img {
-    width: 100px !important;
-    height: auto;
-}
-
-.navbar .navbar-brand img {
-    width: 50px;
-    height: auto;
-} */
-
-
+/* Navigation */
 #header .navbar {
     background-color: transparent;
     transition: padding 0.3s ease;
@@ -107,11 +101,9 @@ header {
     transition: color 0.3s ease;
 }
 
-
 #header .sticky-link {
     color: #414f6b !important;
 }
-
 
 #header nav ul li a,
 #header .nav-link {
@@ -123,8 +115,7 @@ header {
     font-size: 12px;
 }
 
-/* === Banner Section Style === */
-
+/* Banner Section Style */
 #header .banner-title {
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
@@ -132,7 +123,6 @@ header {
     color: #4d4d4d;
     line-height: 0.8;
 }
-
 
 /* Define custom font sizes based on media queries */
 @media (max-width: 576px) {
@@ -156,9 +146,7 @@ header {
     }
 }
 
-
-/* === History Section Style === */
-
+/* History Section Style */
 .history {
     background-image: url('/assets/img/history-bg.jpg');
     background-size: cover;
@@ -173,24 +161,19 @@ header {
     padding: 150px 0 300px 0;
 }
 
-
-
-
-/* Media query for tablets and smaller screens */
+/* Media queries for tablets and smaller screens */
 @media (max-width: 991px) {
     .history .text-container {
         padding: 100px 0 200px 0;
     }
 }
 
-/* Media query for mobile phones */
+/* Media queries for mobile phones */
 @media (max-width: 767px) {
     .history .text-container {
         padding: 50px 0 100px 0;
     }
 }
-
-
 
 .history h3 {
     font-family: 'Oswald', sans-serif;
@@ -205,7 +188,6 @@ header {
 .history h3 span {
     font-size: 32px;
     color: #6e7e99;
-
 }
 
 .history p {
@@ -215,9 +197,7 @@ header {
     line-height: 1.5;
     text-align: left;
     color: #000;
-
 }
-
 
 .carousel-container {
     background: rgb(57 70 92 / 50%);
@@ -242,13 +222,7 @@ header {
     background-color: #ccc;
 }
 
-/* === Climb Section Style === */
-
-/* .text-container {
-    padding: 50px 0;
-} */
-
-
+/* Climb Section Style */
 .climb .text-container {
     display: flex;
     align-items: center;
@@ -268,7 +242,6 @@ header {
 .climb .text-container h3 span {
     font-size: 32px;
     color: #b0b4be;
-
 }
 
 .climb .text-container p {
@@ -278,32 +251,19 @@ header {
     line-height: 1.5;
     text-align: left;
     color: #000;
-
 }
 
-
-/* === Tab Content Section Style === */
-
-
+/* Tab Content Section Style */
 #mountain-tab .nav-pills-container {
     background-color: #414f6b;
     width: 100%;
-    /* padding: 10px 0; */
-
 }
-
-/* #mountain-tab .nav.nav-pills {
-    background-color: #414f6b;
-    width: 100%;
-    padding: 10px 0;
-} */
 
 #mountain-tab .nav-link {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     color: #b0b4be;
     text-transform: uppercase;
-    font-weight: bold;
     padding: 10px 20px;
     border-radius: 0;
 }
@@ -313,7 +273,6 @@ header {
     padding: 10px 20px;
     color: #414f6b;
     border-radius: 0;
-
 }
 
 #mountain-tab .nav-link:not(.active):hover {
@@ -321,49 +280,38 @@ header {
     transition: color 0.3s ease;
 }
 
+.tab-content-mountain1::before,
+.tab-content-mountain2::before {
+    content: "";
+    display: block;
+    padding-top: 30%;
+}
 
 .tab-content-mountain1 {
+    background-image: url('/assets/img/bg-mountain1.jpg');
     position: relative;
     width: 100%;
     min-height: 600px;
-    background-image: url('/assets/img/bg-mountain1.jpg');
     background-size: cover;
     background-position: top center;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
     overflow: hidden;
-
 }
-
-/* .tab-content-mountain1::before {
-    content: "";
-    display: block;
-    padding-top: 30%;
-
-} */
-
 
 .tab-content-mountain2 {
+    background-image: url('/assets/img/bg-mountain2.jpg');
     position: relative;
     width: 100%;
     min-height: 600px;
-    background-image: url('/assets/img/bg-mountain2.jpg');
     background-size: cover;
     background-position: top center;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
     overflow: hidden;
-
 }
-
-/* .tab-content-mountain2::before {
-    content: "";
-    display: block;
-    padding-top: 30%;
-
-} */
 
 .schedulebox {
     position: absolute;
@@ -394,12 +342,10 @@ header {
     color: #000;
 }
 
-
 @media screen and (min-width: 768px) {
     .schedulebox {
         left: 16%;
         max-width: 400px;
-
     }
 }
 
@@ -411,7 +357,6 @@ header {
     }
 }
 
-
 @media (max-width: 480px) {
     .schedulebox {
         max-width: 100%;
@@ -421,9 +366,7 @@ header {
     }
 }
 
-
-/* === Footer Section Style === */
-
+/* Footer Section Style */
 footer {
     display: flex;
     justify-content: center;
@@ -432,7 +375,6 @@ footer {
     background: #414f6b;
     padding: 10px 10px;
 }
-
 
 .copyright-text {
     font-family: 'Lato Black Italic', sans-serif;
