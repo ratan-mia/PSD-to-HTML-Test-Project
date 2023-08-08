@@ -11,19 +11,6 @@ li {
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&family=Oswald:wght@700&display=swap');
-
-
-@font-face {
-    font-family: 'Lato Black Italic';
-    src: url('assets/fonts/lato-blackitalic-webfont.woff2') format('woff2'),
-        url('assets/fonts/lato-blackitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 /* Set a base font and background color */
 body {
     font-family: Arial, sans-serif;
@@ -59,6 +46,19 @@ p {
     body {
         font-size: 14px;
     }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&family=Oswald:wght@700&display=swap');
+
+
+@font-face {
+    font-family: 'Lato Black Italic';
+    src: url('assets/fonts/lato-blackitalic-webfont.woff2') format('woff2'),
+        url('assets/fonts/lato-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 
@@ -127,6 +127,8 @@ header {
 
 #header .banner-title {
     font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
     color: #4d4d4d;
     line-height: 0.8;
 }
@@ -171,6 +173,9 @@ header {
     padding: 150px 0 300px 0;
 }
 
+
+
+
 /* Media query for tablets and smaller screens */
 @media (max-width: 991px) {
     .history .text-container {
@@ -192,6 +197,7 @@ header {
     font-weight: bold;
     font-size: 135px;
     line-height: 1;
+    text-transform: uppercase;
     text-align: left;
     color: #6e7e99;
 }
@@ -238,8 +244,15 @@ header {
 
 /* === Climb Section Style === */
 
-.climb .text-container {
+/* .text-container {
     padding: 50px 0;
+} */
+
+
+.climb .text-container {
+    display: flex;
+    align-items: center;
+    height: 25vh;
 }
 
 .climb .text-container h3 {
@@ -247,6 +260,7 @@ header {
     font-weight: bold;
     font-size: 135px;
     line-height: 1;
+    text-transform: uppercase;
     text-align: left;
     color: #b0b4be;
 }
@@ -381,8 +395,6 @@ header {
 }
 
 
-/* Responsive Styles */
-
 @media screen and (min-width: 768px) {
     .schedulebox {
         left: 16%;
@@ -407,4 +419,28 @@ header {
         top: 5%;
         padding: 20px;
     }
+}
+
+
+/* === Footer Section Style === */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    background: #414f6b;
+    padding: 10px 10px;
+}
+
+
+.copyright-text {
+    font-family: 'Lato Black Italic', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #63769d;
 }
